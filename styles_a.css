@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #a8e0ff, #e3f2fd); /* Dégradé de couleur */
+    background-image: url('pexels-photo-2258536.jpeg');
+    background-size: cover; /* Remplir l'écran */
+    background-position: center; /* Centrer l'image */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+    height: 100vh; /* Prendre toute la hauteur de la fenêtre */
+    justify-content: center;
+
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Fond blanc transparent */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+.verse-container {
+    font-size: 24px;
+    margin: 20px 0;
+    animation: fadeIn 0.5s;
+}
+
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.option {
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: #e7f1ff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.option:hover {
+    background-color: #cce5ff;
+    transform: scale(1.05);
+}
+
+.option.selected {
+    background-color: #28a745;
+    color: white;
+    transform: scale(1.1);
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

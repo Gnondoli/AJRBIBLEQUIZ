@@ -1,0 +1,137 @@
+/* Général - inchangé */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mise en page principale - inchangé */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #2b2f33;
+  color: #f4f4f4;
+}
+
+/* Conteneur principal - inchangé */
+.dashboard {
+  width: 90%;
+  max-width: 900px;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+/* En-tête - inchangé */
+header {
+  background-color: #444;
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Section lecteur - ajustée */
+.player-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Contrôles du lecteur avec boutons */
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Agrandissement de la zone vidéo/audio/iframe */
+#videoPlayer, #audioPlayer, #youtubePlayer {
+  width: 100%;
+  max-width: 700px; /* Largeur maximale pour une meilleure visibilité */
+  height: 400px;    /* Augmenter la hauteur pour un meilleur confort visuel */
+  display: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre pour améliorer la visibilité */
+}
+
+/* Boutons de navigation - inchangé */
+/* Style pour les boutons de navigation */
+button {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #ff5733;
+  border: none;
+  border-radius: 50%; /* Boutons arrondis */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre pour donner de la profondeur */
+}
+
+button:hover {
+  background-color: #ff8c42;
+}
+
+
+/* Informations sur la piste actuelle */
+#currentTrack {
+  font-size: 16px;
+  color: #bbb;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Section playlist - inchangé */
+.playlist-section {
+  padding: 20px;
+  background-color: #333;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Titre de la playlist */
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* Liste de lecture avec miniatures */
+.playlist {
+  list-style-type: none;
+}
+
+.playlist li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #555;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: background 0.3s;
+}
+
+.playlist li img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.playlist li:hover {
+  background-color: #555;
+}
+
+.playlist li.active {
+  background-color: #ff5733;
+  font-weight: bold;
+  color: #fff;
+}

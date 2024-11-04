@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Playlist Vidéo et Audio</title>
+  <link rel="stylesheet" href="style_c.css">
+</head>
+<body>
+  <div class="dashboard">
+    <header>
+      <h1>Ma Playlist</h1>
+      <h6><a href="index.html">...Retour debut</a></h6>
+    </header>
+
+    <!-- Player Section -->
+    <div class="player-section">
+        <div class="player-controls">
+            <button id="prevBtn">⏪</button> <!-- Icône de flèche gauche -->
+            <iframe id="youtubePlayer" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <video id="videoPlayer" controls></video>
+            <audio id="audioPlayer" controls></audio>
+            <button id="nextBtn">⏩</button> <!-- Icône de flèche droite -->
+          </div>          
+        <p id="currentTrack">Sélectionnez un morceau pour commencer</p>
+      </div>
+      
+
+    <!-- Playlist Section -->
+    <div class="playlist-section">
+      <h2>Playlist</h2>
+      <ul class="playlist" id="playlist">
+        <!-- Les éléments de la playlist seront ajoutés par JavaScript -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="script_c.js"></script>
+</body>
+</html>
